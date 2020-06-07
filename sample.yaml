@@ -4,5 +4,5 @@ tests:
   sample.basic.blinky:
     tags: LED gpio
     filter: dt_compat_enabled_with_alias("gpio-leds", "led0")
-    depends_on: gpio
+    depends_on: gpio, spis
     harness: led
